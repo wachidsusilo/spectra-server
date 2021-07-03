@@ -16,5 +16,5 @@ const server = http.createServer(app);
 export const ws = new WebSocket.Server({server});
 ws.on('connection', onConnection);
 
-const PORT = process.env.port || 5000;
-server.listen(PORT, '0.0.0.0');
+const PORT = process.env.PORT || 5000;
+server.listen(PORT);
